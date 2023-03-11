@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/tayken05/Results)
-- Live Site URL: [Add live site URL here](https://myresultproject1.netlify.app)
+- Solution URL: [Add solution URL here](https://github.com/tayken05/product-preview-component)
+- Live Site URL: [Add live site URL here](https://prouct-card-prerview.netlify.app/)
 
 ## My process
 
@@ -38,6 +38,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Media queries.
+- SASS
 
 ### What I learned
 
