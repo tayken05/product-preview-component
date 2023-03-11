@@ -1,0 +1,186 @@
+// AUthor: Dev_Devel
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Defined styles
+$color1: hsl(228, 12%, 48%);
+$color2: hsl(0, 0%, 100%);
+$color3: hsl(158, 36%, 37%);
+$font1: Montserrat; 
+$font2: Fraunces;
+
+
+body {
+  $color2: hsl(30, 38%, 92%);
+  background-color: $color2;
+  font-family: $font1;
+}
+
+//Large Screen Design
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+}
+
+.row-2 {
+  display: none;
+}
+
+.card {
+  width: 300px;
+  height: 470px;
+}
+
+.card-1 img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $color2;
+  padding: 5vmin 6vmin;
+}
+
+h2 {
+  font-weight: 500;
+  color: $color1;
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+
+.p1 {
+  font-family: $font2;
+  font-weight: 700;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.p2 {
+  color: $color1;
+  font-size: 0.8em;
+}
+
+.p-numbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color1;
+  font-size: 0.8em;
+}
+
+.numb1 {
+  color: $color3;
+  font-weight: 700;
+  font-family: $font2;
+  font-size: 1.9em;
+  margin-right: 12px;
+}
+
+
+.card-2 button {
+  background-color: $color3;
+  border: none;
+  padding: 10px 5px;
+  color: $color2;
+  border-radius: 7px;
+  transition: background-color 0.5s;
+}
+
+.card-2 button:hover {
+  $color3: hsl(158, 65%, 15%);
+  background-color: $color3;
+  cursor: pointer;
+}
+
+
+//Medium screen Design Styles 
+//For the rest of the screen sizes you make the card with class card-2 visible and set the card with class card-1 display not visible
+@media screen and (max-width: 600px) {
+
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 100px 10px 100px 10px;
+  }
+  
+
+  .row-1 {
+    display: none;
+  }
+
+  
+  .card {
+    width: 400px;
+    height: 400px;
+  }
+
+  .card-1 {
+    width: 400px;
+    height: 280px;
+  }
+
+  .card-1 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%; 
+    height: auto;
+    border-bottom-left-radius: 0;
+  }
+  
+
+
+}
+
+
+//Smaller screen Design Styles 
+@media screen and (max-width: 410px) {
+
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 10px 100px 10px;
+  }
+  
+
+  .row-1 {
+    display: none;
+  }
+
+  
+  .card {
+    width: 300px;
+    height: 400px;
+  }
+
+  .card-1 {
+    width: 300px;
+    height: 200px;
+  }
+
+  .card-1 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%; 
+    height: auto;
+    border-bottom-left-radius: 0;
+  }
+  
+
+
+}
